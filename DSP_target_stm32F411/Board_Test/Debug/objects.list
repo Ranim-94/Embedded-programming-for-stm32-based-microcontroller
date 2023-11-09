@@ -1,0 +1,4 @@
+"./Src/main_board_test.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f411retx.o"

@@ -1,0 +1,5 @@
+"./Src/main_signal_plotting.o"
+"./Src/signals.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f411retx.o"
