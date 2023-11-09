@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;operation_mode/Src/main.c&apos; to &apos;main_operation_mode.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/main.c" name="main_operation_mode.c" stamp="1681773652267" updateReferences="true"/>
+</session>

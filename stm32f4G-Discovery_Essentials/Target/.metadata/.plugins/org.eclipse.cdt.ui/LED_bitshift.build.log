@@ -1,0 +1,10 @@
+18:29:49 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+
+18:29:49 Build Finished. 0 errors, 0 warnings. (took 256ms)
+

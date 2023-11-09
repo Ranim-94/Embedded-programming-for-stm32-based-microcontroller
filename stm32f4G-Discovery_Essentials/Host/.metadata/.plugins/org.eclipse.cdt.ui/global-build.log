@@ -1,0 +1,13 @@
+18:54:48 **** Rebuild of configuration Debug for project Packets_bit_fields ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main_packets_bit_fields.o "..\\main_packets_bit_fields.c" 
+..\main_packets_bit_fields.c: In function 'main':
+..\main_packets_bit_fields.c:90:52: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   90 |                 printf("Size of the structure: %I64u bytes \n",sizeof(packet_1)) ;
+      |                                                ~~~~^           ~~~~~~~~~~~~~~~~
+      |                                                    |           |
+      |                                                    |           long long unsigned int
+      |                                                    unsigned int
+      |                                                %I64llu
+gcc -o Packets_bit_fields.exe main_packets_bit_fields.o 
+Info: Nothing to build for Packets_bit_fields

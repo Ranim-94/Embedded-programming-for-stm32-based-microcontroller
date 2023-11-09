@@ -1,0 +1,93 @@
+11:01:43 **** Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main_LED_bitshift.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main_LED_bitshift.d" -MT"Src/main_LED_bitshift.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main_LED_bitshift.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "LED_bitshift.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\1_Simulations_Programming\Embedded Programming\stm32f4G-Discovery_Essentials\Target\LED_bitshift\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_bitshift.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LED_bitshift.elf
+ 
+arm-none-eabi-size   LED_bitshift.elf 
+arm-none-eabi-objdump -h -S  LED_bitshift.elf  > "LED_bitshift.list"
+arm-none-eabi-objcopy  -O binary  LED_bitshift.elf  "LED_bitshift.bin"
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+Finished building: LED_bitshift.list
+Finished building: LED_bitshift.bin
+ 
+ 
+11:01:53 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+15:36:50 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+15:52:38 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+15:59:11 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+16:01:09 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+16:15:38 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+17:59:20 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+18:00:46 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main_LED_bitshift.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main_LED_bitshift.d" -MT"Src/main_LED_bitshift.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main_LED_bitshift.o"
+arm-none-eabi-gcc -o "LED_bitshift.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\1_Simulations_Programming\Embedded Programming\stm32f4G-Discovery_Essentials\Target\LED_bitshift\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_bitshift.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LED_bitshift.elf
+ 
+arm-none-eabi-size   LED_bitshift.elf 
+arm-none-eabi-objdump -h -S  LED_bitshift.elf  > "LED_bitshift.list"
+arm-none-eabi-objcopy  -O binary  LED_bitshift.elf  "LED_bitshift.bin"
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
+Finished building: LED_bitshift.list
+Finished building: LED_bitshift.bin
+ 
+ 
+18:29:49 **** Incremental Build of configuration Debug for project LED_bitshift ****
+make -j8 all 
+arm-none-eabi-size   LED_bitshift.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	LED_bitshift.elf
+Finished building: default.size.stdout
+ 
